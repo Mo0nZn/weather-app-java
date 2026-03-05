@@ -11,7 +11,7 @@ import java.net.http.HttpResponse;
 
 public class WeatherController {
     private final HttpClient client;
-    private final String API_KEY= "a04b957f3d8c849a2971ec0a71ccf144";
+    private final String API_KEY= System.getenv("API_WEATHER_KEY");
     private final CityController cityController =  new CityController();
 
     public WeatherController() {
